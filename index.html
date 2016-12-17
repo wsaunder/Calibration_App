@@ -14,12 +14,12 @@
 	<tr>
 		1
 		<form id=calorimeter1 onsubmit="waterBugs(document.getElementById("calibration1").valueAsNumber, document.getElementById("temp1").valueAsNumber, document.getElementById("weight1").valueAsNumber">
-			<input type="number" name="calibration1" id="calibration1">
-			<input type="number" name="temp1" id="temp1">
-			<input type="number" name="weight1" id="weight1">
-			<input type="submit" name="calculate" id="calculate1">
+			<input type="number" step=".01" name="calibration1" id="calibration1">
+			<input type="number" step=".01" name="temp1" id="temp1">
+			<input type="number" step=".01" name="weight1" id="weight1">
+			<input type="submit" step=".01" name="calculate" id="calculate1">
 		Calculated <!--calculate water equivalent -->
-		<output form="calorimeter1" id="calculated1">
+		<output step=".01" form="calorimeter1" id="calculated1">
 		Good? <!-- is Calculated within .16% of calibration1-->
 		</form>
 	</tr>
