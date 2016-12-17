@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<table style="width:100%">
+	<tr>
+		<th>Calorimeter</th>
+		<th>Current Calibration</th>
+		<th>Temperature Rise</th>
+		<th>Weight</th>
+		<th>Calculated</th>
+		<th>Good?</th>
+	</tr>
+	<tr>
+		1
+		<form id=calorimeter1 onsubmit="waterBugs(document.getElement)">
+			<input type="number" name="calibration1" id="calibration1">
+			<input type="number" name="temp1" id="temp1">
+			<input type="number" name="weight1" id="weight1">
+			<input type="submit" name="calculate" id="calculate1">
+		Calculated <!--calculate water equivalent -->
+		<output form="calorimeter1" id="calculated1">
+		Good? <!-- is Calculated within .16% of calibration1-->
+		</form>
+	</tr>
+	
+	<script>
+		function waterBugs(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			if(inputs > minWater && inputs < maxWater) 
+				return "Bro its good!"
+			else
+				return "Nah"
+				}
+	</script>
+  </body>
+  </html>
