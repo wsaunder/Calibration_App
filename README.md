@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<body>
 
-You can use the [editor on GitHub](https://github.com/wsaunder/Calibration_App/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+		Calorimeter 11
+		<form id=calorimeter1>
+			Calibration<input type="number" step="Any" name="calibration1" id="calibration1">
+			Heat Rise<input type="number" step="Any" name="temp1" id="temp1">
+			Weight<input type="number" step="Any" name="weight1" id="weight1">
+			<input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration1').valueAsNumber, document.getElementById('temp1').valueAsNumber, document.getElementById('weight1').valueAsNumber)">
+			
+		</form>
+	<p id="result"></p>
+	
 
-### Markdown
+	
+	<script>
+		function waterBugs(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			if(inputs > minWater && inputs < maxWater) 
+				document.getElementById("result").innerHTML = "Bro its good!";
+				
+			else
+				document.getElementById("result").innerHTML = "Time to Recalibrate";
+				
+				}
+	</script>
+  </body>
+  </html>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wsaunder/Calibration_App/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
