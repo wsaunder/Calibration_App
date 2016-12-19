@@ -2,24 +2,18 @@
 <html>
 <body>
 
-<table style="width:100%">
-	<tr>
-		<th>Calorimeter</th>
-		<th>Current Calibration</th>
-		<th>Temperature Rise</th>
-		<th>Weight</th>
-		<th>Calculated</th>
-		<th>Good?</th>
-	</tr>
-	<tr>
-		1
-		<form id=calorimeter1 onsubmit="waterBugs(document.getElementById('calibration1').valueAsNumber, document.getElementById('temp1').valueAsNumber, document.getElementById('weight1').valueAsNumber)">
-			<input type="number" step=".01" name="calibration1" id="calibration1">
-			<input type="number" step=".01" name="temp1" id="temp1">
-			<input type="number" step=".01" name="weight1" id="weight1">
-			<input type="submit" step=".01" name="calculate" id="calculate1">
+
+		Calorimeter 11
+		<form id=calorimeter1>
+			Calibration<input type="number" step="Any" name="calibration1" id="calibration1">
+			Heat Rise<input type="number" step="Any" name="temp1" id="temp1">
+			Weight<input type="number" step="Any" name="weight1" id="weight1">
+			<input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration1').valueAsNumber, document.getElementById('temp1').valueAsNumber, document.getElementById('weight1').valueAsNumber)">
+			
 		</form>
-	</tr>
+	<p id="result"></p>
+	
+
 	
 	<script>
 		function waterBugs(calibration, temp, weight) {
@@ -27,9 +21,11 @@
 			var minWater = calibration * .9984;
 			var maxWater = calibration * 1.0016;
 			if(inputs > minWater && inputs < maxWater) 
-				alert("Bro its good!");
+				document.getElementById("result").innerHTML = "Bro its good!";
+				
 			else
-				alert("Time to Recalibrate");
+				document.getElementById("result").innerHTML = "Time to Recalibrate";
+				
 				}
 	</script>
   </body>
