@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 
@@ -98,3 +98,20 @@
 	<br>
 	<p id="result92"></p>
 	</br>
+
+	<script>
+		function waterBugs(calibration, temp, weight, outputElement) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			
+			if(inputs > minWater && inputs < maxWater) 
+				outputElement.innerHTML = "Bro its good!";
+				
+			else
+				outputElement.innerHTML = "Time to Recalibrate";
+				
+				}
+	</script>
+  </body>
+  </html>
