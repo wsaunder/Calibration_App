@@ -4,27 +4,192 @@
 
 
 		Calorimeter 11
-		<form id=calorimeter1>
-			Calibration<input type="number" step="Any" name="calibration1" id="calibration1">
-			Heat Rise<input type="number" step="Any" name="temp1" id="temp1">
-			Weight<input type="number" step="Any" name="weight1" id="weight1">
-			<input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration1').valueAsNumber, document.getElementById('temp1').valueAsNumber, document.getElementById('weight1').valueAsNumber)">
+		<form id=calorimeter11>
+			Calibration<input type="number" step="Any" name="calibration11" id="calibration11">
+			Heat Rise<input type="number" step="Any" name="temp11" id="temp11">
+			Weight<input type="number" step="Any" name="weight11" id="weight11">
+			<input type="button" value= "Calculate" onClick="waterBugs11(document.getElementById('calibration11').valueAsNumber, document.getElementById('temp11').valueAsNumber, document.getElementById('weight11').valueAsNumber), 'result11'">
 			
 		</form>
-	<p id="result"></p>
+	<br>
+	<p id="result11"></p>
+	</br>
 	
+			Calorimeter 21
+		<form id=calorimeter21>
+			Calibration<input type="number" step="Any" name="calibration21" id="calibration21">
+			Heat Rise<input type="number" step="Any" name="temp21" id="temp21">
+			Weight<input type="number" step="Any" name="weight21" id="weight21">
+			<input type="button" value= "Calculate" onClick="waterBugs21(document.getElementById('calibration21').valueAsNumber, document.getElementById('temp21').valueAsNumber, document.getElementById('weight21').valueAsNumber)">
+			
+		</form>
+	<br>
+	<p id="result21"></p>
+	</br>
+	
+			Calorimeter 71
+		<form id=calorimeter71>
+			Calibration<input type="number" step="Any" name="calibration71" id="calibration71">
+			Heat Rise<input type="number" step="Any" name="temp71" id="temp71">
+			Weight<input type="number" step="Any" name="weight71" id="weight71">
+			<input type="button" value= "Calculate" onClick="waterBugs71(document.getElementById('calibration71').valueAsNumber, document.getElementById('temp71').valueAsNumber, document.getElementById('weight71').valueAsNumber)">
+			
+		</form>
+	<br>
+	<p id="result71"></p>
+	</br>
+			Calorimeter 72
+		<form id=calorimeter72>
+			Calibration<input type="number" step="Any" name="calibration72" id="calibration72">
+			Heat Rise<input type="number" step="Any" name="temp72" id="temp72">
+			Weight<input type="number" step="Any" name="weight72" id="weight72">
+			<input type="button" value= "Calculate" onClick="waterBugs72(document.getElementById('calibration72').valueAsNumber, document.getElementById('temp72').valueAsNumber, document.getElementById('weight72').valueAsNumber)">
+			
+		</form>
+	<br>
+	<p id="result72"></p>
+	</br>
+			Calorimeter 81
+		<form id=calorimeter81>
+			Calibration<input type="number" step="Any" name="calibration81" id="calibration81">
+			Heat Rise<input type="number" step="Any" name="temp81" id="temp81">
+			Weight<input type="number" step="Any" name="weight81" id="weight81">
+			<input type="button" value= "Calculate" onClick="waterBugs81(document.getElementById('calibration81').valueAsNumber, document.getElementById('temp81').valueAsNumber, document.getElementById('weight81').valueAsNumber)">
+			
+		</form>
+	<br>
+	<p id="result81"></p>
+	</br>
+			Calorimeter 82
+		<form id=calorimeter82>
+			Calibration<input type="number" step="Any" name="calibration82" id="calibration82">
+			Heat Rise<input type="number" step="Any" name="temp82" id="temp82">
+			Weight<input type="number" step="Any" name="weight82" id="weight82">
+			<input type="button" value= "Calculate" onClick="waterBugs82(document.getElementById('calibration82').valueAsNumber, document.getElementById('temp82').valueAsNumber, document.getElementById('weight82').valueAsNumber)">
+			
+		</form>
+	<br>
+	<p id="result82"></p>
+	</br>
+			Calorimeter 91
+		<form id=calorimeter91>
+			Calibration<input type="number" step="Any" name="calibration91" id="calibration91">
+			Heat Rise<input type="number" step="Any" name="temp91" id="temp91">
+			Weight<input type="number" step="Any" name="weight91" id="weight91">
+			<input type="button" value= "Calculate" onClick="waterBugs91(document.getElementById('calibration91').valueAsNumber, document.getElementById('temp91').valueAsNumber, document.getElementById('weight91').valueAsNumber)">
+			
+		</form>
+	<br>
+	<p id="result91"></p>
+	</br>
+			Calorimeter 92
+		<form id=calorimeter92>
+			Calibration<input type="number" step="Any" name="calibration92" id="calibration92">
+			Heat Rise<input type="number" step="Any" name="temp92" id="temp92">
+			Weight<input type="number" step="Any" name="weight92" id="weight92">
+			<input type="button" value= "Calculate" onClick="waterBugs92(document.getElementById('calibration92').valueAsNumber, document.getElementById('temp92').valueAsNumber, document.getElementById('weight92').valueAsNumber)">
+			
+		</form>
+	<br>
+	<p id="result92"></p>
+	</br>
 
 	
 	<script>
-		function waterBugs(calibration, temp, weight) {
+		function waterBugs11(calibration, temp, weight) {
 			var inputs = temp + weight;
 			var minWater = calibration * .9984;
 			var maxWater = calibration * 1.0016;
+			
 			if(inputs > minWater && inputs < maxWater) 
-				document.getElementById("result").innerHTML = "Bro its good!";
+				document.getElementById("result11").innerHTML = "Bro its good!";
 				
 			else
-				document.getElementById("result").innerHTML = "Time to Recalibrate";
+				document.getElementById("result11").innerHTML = "Time to Recalibrate";
+				
+				}
+				function waterBugs21(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			
+			if(inputs > minWater && inputs < maxWater) 
+				document.getElementById("result21").innerHTML = "Bro its good!";
+				
+			else
+				document.getElementById("result21").innerHTML = "Time to Recalibrate";
+				
+				}
+				function waterBugs71(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			
+			if(inputs > minWater && inputs < maxWater) 
+				document.getElementById("result71").innerHTML = "Bro its good!";
+				
+			else
+				document.getElementById("result71").innerHTML = "Time to Recalibrate";
+				
+				}
+				function waterBugs72(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			
+			if(inputs > minWater && inputs < maxWater) 
+				document.getElementById("result72").innerHTML = "Bro its good!";
+				
+			else
+				document.getElementById("result72").innerHTML = "Time to Recalibrate";
+				
+				}
+				function waterBugs81(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			
+			if(inputs > minWater && inputs < maxWater) 
+				document.getElementById("result81").innerHTML = "Bro its good!";
+				
+			else
+				document.getElementById("result81").innerHTML = "Time to Recalibrate";
+				
+				}
+				function waterBugs82(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			
+			if(inputs > minWater && inputs < maxWater) 
+				document.getElementById("result82").innerHTML = "Bro its good!";
+				
+			else
+				document.getElementById("result82").innerHTML = "Time to Recalibrate";
+				
+				}
+				function waterBugs91(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			
+			if(inputs > minWater && inputs < maxWater) 
+				document.getElementById("result91").innerHTML = "Bro its good!";
+				
+			else
+				document.getElementById("result91").innerHTML = "Time to Recalibrate";
+				
+				}
+				function waterBugs92(calibration, temp, weight) {
+			var inputs = temp + weight;
+			var minWater = calibration * .9984;
+			var maxWater = calibration * 1.0016;
+			
+			if(inputs > minWater && inputs < maxWater) 
+				document.getElementById("result92").innerHTML = "Bro its good!";
+				
+			else
+				document.getElementById("result92").innerHTML = "Time to Recalibrate";
 				
 				}
 	</script>
