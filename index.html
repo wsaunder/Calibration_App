@@ -24,8 +24,6 @@
     }
     p {
         font-weight: bold;
-        font-size: 125%;
-        color: blue
     }
     .floating-box {
         display: inline-block;
@@ -38,6 +36,7 @@
         font-weight: bold;
         font-size: 150%;
     }
+
 </style>
 <body>
 
@@ -51,7 +50,7 @@
             Heat Rise:<input type="number" step="Any" name="temp11" id="temp11">
             Weight:<input type="number" step="Any" name="weight11" id="weight11">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration11').valueAsNumber, document.getElementById('temp11').valueAsNumber, document.getElementById('weight11').valueAsNumber, document.getElementById('result11'), document.getElementById('slope11').valueAsNumber, document.getElementById('intercept11').valueAsNumber)">
-            <p id="result11">.</p>
+            <p id="result11">% Error</p>
         </form>
     
     
@@ -65,7 +64,7 @@
             Heat Rise:<input type="number" step="Any" name="temp21" id="temp21">
             Weight:<input type="number" step="Any" name="weight21" id="weight21">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration21').valueAsNumber, document.getElementById('temp21').valueAsNumber, document.getElementById('weight21').valueAsNumber, document.getElementById('result21'), document.getElementById('slope21').valueAsNumber, document.getElementById('intercept21').valueAsNumber)">
-            <p id="result21">.</p>
+            <p id="result21">% Error</p>
         </form>
    
     
@@ -79,7 +78,7 @@
             Heat Rise:<input type="number" step="Any" name="temp71" id="temp71">
             Weight:<input type="number" step="Any" name="weight71" id="weight71">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration71').valueAsNumber, document.getElementById('temp71').valueAsNumber, document.getElementById('weight71').valueAsNumber, document.getElementById('result71'), document.getElementById('slope71').valueAsNumber, document.getElementById('intercept71').valueAsNumber)">
-            <p id="result71">.</p>
+            <p id="result71">% Error</p>
         </form>
     
     
@@ -93,7 +92,7 @@
             Heat Rise:<input type="number" step="Any" name="temp72" id="temp72">
             Weight:<input type="number" step="Any" name="weight72" id="weight72">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration72').valueAsNumber, document.getElementById('temp72').valueAsNumber, document.getElementById('weight72').valueAsNumber, document.getElementById('result72'), document.getElementById('slope72').valueAsNumber, document.getElementById('intercept72').valueAsNumber)">
-            <p id="result72">.</p>
+            <p id="result72">% Error</p>
         </form>
 
     
@@ -107,7 +106,7 @@
             Heat Rise:<input type="number" step="Any" name="temp81" id="temp81">
             Weight:<input type="number" step="Any" name="weight81" id="weight81">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration81').valueAsNumber, document.getElementById('temp81').valueAsNumber, document.getElementById('weight81').valueAsNumber, document.getElementById('result81') ,document.getElementById('slope81').valueAsNumber, document.getElementById('intercept81').valueAsNumber)">
-            <p id="result81">.</p>
+            <p id="result81">% Error</p>
         </form>
 
     
@@ -121,7 +120,7 @@
             Heat Rise:<input type="number" step="Any" name="temp82" id="temp82">
             Weight:<input type="number" step="Any" name="weight82" id="weight82">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration82').valueAsNumber, document.getElementById('temp82').valueAsNumber, document.getElementById('weight82').valueAsNumber, document.getElementById('result82'),document.getElementById('slope82').valueAsNumber, document.getElementById('intercept82').valueAsNumber)">
-            <p id="result82">.</p>
+            <p id="result82">% Error</p>
         </form>
 
     
@@ -135,7 +134,7 @@
             Heat Rise:<input type="number" step="Any" name="temp91" id="temp91">
             Weight:<input type="number" step="Any" name="weight91" id="weight91">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration91').valueAsNumber, document.getElementById('temp91').valueAsNumber, document.getElementById('weight91').valueAsNumber, document.getElementById('result91'), document.getElementById('slope91').valueAsNumber, document.getElementById('intercept91').valueAsNumber)">
-            <p id="result91">.</p>
+            <p id="result91">% Error</p>
         </form>
 
     
@@ -149,7 +148,7 @@
             Heat Rise:<input type="number" step="Any" name="temp92" id="temp92">
             Weight:<input type="number" step="Any" name="weight92" id="weight92">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration92').valueAsNumber, document.getElementById('temp92').valueAsNumber, document.getElementById('weight92').valueAsNumber, document.getElementById('result92'), document.getElementById('slope92').valueAsNumber, document.getElementById('intercept92').valueAsNumber)">
-            <p id="result92">.</p>
+            <p id="result92" color=lightgrey>% Error</p>
         </form>
 
     
