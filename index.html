@@ -161,7 +161,7 @@
             var calculatedWE = totalBTU / temp;
             var minWater = calibration * .9984;
             var maxWater = calibration * 1.0016;
-            var error = calculatedWE / calibration
+            var error = 100 * (calibration - calculatedWE) / calibration
             if(calculatedWE > minWater && calculatedWE < maxWater) 
                 outputElement.innerHTML = "Bro its good!";
                 
