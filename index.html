@@ -22,12 +22,28 @@
         font-weight: bold;
         font-size: 150%;
     }
+    p {
+        font-weight: bold;
+        font-size: 125%;
+        color: blue
+    }
+    .floating-box {
+        display: inline-block;
+        width: 500px;
+        
+        margin: 8px;
+        border: 3px solid #73AD21;  
+    }
+    .calName {
+        font-weight: bold;
+        font-size: 150%;
+    }
 </style>
 <body>
 
     
-        <h>Calorimeter 11</h>
-        <form id=calorimeter11>
+        <form id=calorimeter11 class="floating-box">
+            <div class="calName">Calorimeter 11</div>
             Slope:<input id="slope11" type="number" name="slope11" value="1.2405"></input>
             Intercept:<input id="intercept11" type="number" name="intercept11" value="1.897"></input>
             Calibration:<input type="number" step="Any" name="calibration11" id="calibration11" value="3545.221">
@@ -35,14 +51,13 @@
             Heat Rise:<input type="number" step="Any" name="temp11" id="temp11">
             Weight:<input type="number" step="Any" name="weight11" id="weight11">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration11').valueAsNumber, document.getElementById('temp11').valueAsNumber, document.getElementById('weight11').valueAsNumber, document.getElementById('result11'), document.getElementById('slope11').valueAsNumber, document.getElementById('intercept11').valueAsNumber)">
-            
+            <p id="result11">.</p>
         </form>
-    <br>
-    <p id="result11"></p>
-    </br>
     
-            <h>Calorimeter 21</h>
-        <form id=calorimeter21>
+    
+            
+        <form id=calorimeter21 class="floating-box">
+            <div class="calName">Calorimeter 21</div>
             Slope:<input id="slope21" type="number" name="slope21" value="1.6844"></input>
             Intercept:<input id="intercept21" type="number" name="intercept21" value=".956"></input>
             Calibration:<input type="number" step="Any" name="calibration21" id="calibration21" value="3553.274">
@@ -50,14 +65,13 @@
             Heat Rise:<input type="number" step="Any" name="temp21" id="temp21">
             Weight:<input type="number" step="Any" name="weight21" id="weight21">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration21').valueAsNumber, document.getElementById('temp21').valueAsNumber, document.getElementById('weight21').valueAsNumber, document.getElementById('result21'), document.getElementById('slope21').valueAsNumber, document.getElementById('intercept21').valueAsNumber)">
-            
+            <p id="result21">.</p>
         </form>
-    <br>
-    <p id="result21"></p>
-    </br>
+   
     
-            <h>Calorimeter 71</h>
-        <form id=calorimeter71>
+            
+        <form id=calorimeter71 class="floating-box">
+            <div class="calName">Calorimeter 71</div>
             Slope:<input id="slope71" type="number" name="slope71" value="2.4117"></input>
             Intercept:<input id="intercept71" type="number" name="intercept71" value="6.4522"></input>
             Calibration:<input type="number" step="Any" name="calibration71" id="calibration71" value="4658.051">
@@ -65,14 +79,13 @@
             Heat Rise:<input type="number" step="Any" name="temp71" id="temp71">
             Weight:<input type="number" step="Any" name="weight71" id="weight71">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration71').valueAsNumber, document.getElementById('temp71').valueAsNumber, document.getElementById('weight71').valueAsNumber, document.getElementById('result71'), document.getElementById('slope71').valueAsNumber, document.getElementById('intercept71').valueAsNumber)">
-            
+            <p id="result71">.</p>
         </form>
-    <br>
-    <p id="result71"></p>
-    </br>
     
-            <h>Calorimeter 72</h>
-        <form id=calorimeter72>
+    
+            
+        <form id=calorimeter72 class="floating-box">
+            <div class="calName">Calorimeter 72</div>
             Slope:<input id="slope72" type="number" name="slope72" value="3.2184"></input>
             Intercept:<input id="intercept72" type="number" name="intercept72" value="4.929"></input>
             Calibration:<input type="number" step="Any" name="calibration72" id="calibration72" value=4656.088>
@@ -80,14 +93,13 @@
             Heat Rise:<input type="number" step="Any" name="temp72" id="temp72">
             Weight:<input type="number" step="Any" name="weight72" id="weight72">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration72').valueAsNumber, document.getElementById('temp72').valueAsNumber, document.getElementById('weight72').valueAsNumber, document.getElementById('result72'), document.getElementById('slope72').valueAsNumber, document.getElementById('intercept72').valueAsNumber)">
-            
+            <p id="result72">.</p>
         </form>
-    <br>
-    <p id="result72"></p>
-    </br>
+
     
-            <h>Calorimeter 81</h>
-        <form id=calorimeter81>
+            
+        <form id=calorimeter81 class="floating-box">
+            <div class="calName">Calorimeter 81</div>
             Slope:<input id="slope81" type="number" name="slope81" value="4.4305"></input>
             Intercept:<input id="intercept81" type="number" name="intercept81" value="1.9613"></input>
             Calibration:<input type="number" step="Any" name="calibration81" id="calibration81" value="4682.324">
@@ -95,14 +107,13 @@
             Heat Rise:<input type="number" step="Any" name="temp81" id="temp81">
             Weight:<input type="number" step="Any" name="weight81" id="weight81">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration81').valueAsNumber, document.getElementById('temp81').valueAsNumber, document.getElementById('weight81').valueAsNumber, document.getElementById('result81') ,document.getElementById('slope81').valueAsNumber, document.getElementById('intercept81').valueAsNumber)">
-            
+            <p id="result81">.</p>
         </form>
-    <br>
-    <p id="result81"></p>
-    </br>
+
     
-            <h>Calorimeter 82</h>
-        <form id=calorimeter82>
+            
+        <form id=calorimeter82 class="floating-box">
+            <div class="calName">Calorimeter 82</div>
             Slope:<input id="slope82" type="number" name="slope82" value="4.7162"></input>
             Intercept:<input id="intercept82" type="number" name="intercept82" value="1.3517"></input>
             Calibration:<input type="number" step="Any" name="calibration82" id="calibration82" value="4694.375">
@@ -110,14 +121,13 @@
             Heat Rise:<input type="number" step="Any" name="temp82" id="temp82">
             Weight:<input type="number" step="Any" name="weight82" id="weight82">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration82').valueAsNumber, document.getElementById('temp82').valueAsNumber, document.getElementById('weight82').valueAsNumber, document.getElementById('result82'),document.getElementById('slope82').valueAsNumber, document.getElementById('intercept82').valueAsNumber)">
-            
+            <p id="result82">.</p>
         </form>
-    <br>
-    <p id="result82"></p>
-    </br>
+
     
-            <h>Calorimeter 91</h>
-        <form id=calorimeter91>
+            
+        <form id=calorimeter91 class="floating-box">
+            <div class="calName">Calorimeter 91</div>
             Slope:<input id="slope91" type="number" name="slope91" value="1.8185"></input>
             Intercept:<input id="intercept91" type="number" name="intercept92" value="3.5871"></input>
             Calibration:<input type="number" step="Any" name="calibration91" id="calibration91" value="4626.29">
@@ -125,14 +135,13 @@
             Heat Rise:<input type="number" step="Any" name="temp91" id="temp91">
             Weight:<input type="number" step="Any" name="weight91" id="weight91">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration91').valueAsNumber, document.getElementById('temp91').valueAsNumber, document.getElementById('weight91').valueAsNumber, document.getElementById('result91'), document.getElementById('slope91').valueAsNumber, document.getElementById('intercept91').valueAsNumber)">
-            
+            <p id="result91">.</p>
         </form>
-    <br>
-    <p id="result91"></p>
-    </br>
+
     
-            <h>Calorimeter 92</h>
-        <form id=calorimeter92>
+            
+        <form id=calorimeter92 class="floating-box">
+            <div class="calName">Calorimeter 92</div>
             Slope:<input name="slope92" id="slope92" type="number" value="1.7005"></input>
             Intercept:<input name="intercept92" id="intercept92" type="number" value="3.8564"></input>
             Calibration:<input type="number" step="Any" name="calibration92" id="calibration92" value=4621.306>
@@ -140,11 +149,9 @@
             Heat Rise:<input type="number" step="Any" name="temp92" id="temp92">
             Weight:<input type="number" step="Any" name="weight92" id="weight92">
             <input type="button" value= "Calculate" onClick="waterBugs(document.getElementById('calibration92').valueAsNumber, document.getElementById('temp92').valueAsNumber, document.getElementById('weight92').valueAsNumber, document.getElementById('result92'), document.getElementById('slope92').valueAsNumber, document.getElementById('intercept92').valueAsNumber)">
-            
+            <p id="result92">.</p>
         </form>
-    <br>
-    <p id="result92"></p>
-    </br>
+
     
 
     
@@ -155,12 +162,12 @@
             var calculatedWE = totalBTU / temp;
             var minWater = calibration * .9984;
             var maxWater = calibration * 1.0016;
-            
+            var error = calculatedWE / calibration
             if(calculatedWE > minWater && calculatedWE < maxWater) 
                 outputElement.innerHTML = "Bro its good!";
                 
             else
-                outputElement.innerHTML = "Recheck" ;
+                outputElement.innerHTML =  "Off by ~ " + error.toFixed(4) + ' %' ;
                 
                 }
     </script>
